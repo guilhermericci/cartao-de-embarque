@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Rubik;
+    background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
+    @apply antialiased;
+  }
+}
+
+#boarding-pass-start {
+  background: linear-gradient(0deg, transparent 10px, #ffffff 0) bottom right,
+    linear-gradient(0deg, transparent 10px, #ffffff 0) bottom left;
+  background-size: 51% 100%;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+      circle at 100% 100.5%,
+      transparent 12px,
+      #ffffff 13px
+    ),
+    radial-gradient(circle at 0 100.5%, transparent 12px, #ffffff 13px);
+}
+
+#boarding-pass-center {
+  background: linear-gradient(0deg, transparent 1rem, #ffffff 0) top left,
+    linear-gradient(0deg, transparent 1rem, #ffffff 0) top right,
+    linear-gradient(0deg, transparent 1rem, #ffffff 0) bottom right,
+    linear-gradient(0deg, transparent 1rem, #ffffff 0) bottom left;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+      circle at 0 -0.5%,
+      transparent 12px,
+      #ffffff 13px
+    ),
+    radial-gradient(circle at 100% -0.5%, transparent 12px, #ffffff 13px),
+    radial-gradient(circle at 100% 100.5%, transparent 12px, #ffffff 13px),
+    radial-gradient(circle at 0 100.5%, transparent 12px, #ffffff 13px);
+}
+
+#boarding-pass-end {
+
+  background: linear-gradient(0deg, transparent 10px, #ffffff 0) top left,
+    linear-gradient(0deg, transparent 10px, #ffffff 0) top right;
+  background-size: 51% 100%;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+      circle at 0 -0.5%,
+      transparent 12px,
+      #ffffff 13px
+    ),
+    radial-gradient(circle at 100% -0.5%, transparent 12px, #ffffff 13px);
+}
